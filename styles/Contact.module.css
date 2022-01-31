@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 80px;
+    z-index: 999;
+  }
+  .left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    height: auto;
+    margin: 30px ;
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+    
+  }
+  .contactDetail{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+  .detail{
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title{
+    padding: 10px 50px;
+  }
+  .form {
+    margin: 0 30px;
+    width: 500px;
+    height: 400px;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+  }
+  
+  .inputS {
+    flex: 1;
+    height: 50px;
+    padding-left: 10px;
+    
+  }
+  
+  .inputS:first-child {
+    margin-right: 5px;
+  }
+  
+  .inputL {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  .textArea {
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .sent{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid green;
+    padding: 5px;
+    background-color: green;
+  }
+  .error{
+    color: red;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container{
+      flex-direction: column;
+      
+    }
+    .card{
+      width: 100%;
+      background-color: white;
+      color: black;
+    }
+    .detail{
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .contactDetail{
+      padding: 10px 30px;
+    }
+    .title{
+      margin-top: 30px;
+    }
+    .form {
+      padding-top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+  
+    .inputS:first-child {
+      margin: 0;
+    }
+  }
+  
