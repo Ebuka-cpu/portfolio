@@ -1,0 +1,1 @@
+{"source":1006897,"name":"nanoid","dependency":"nanoid","title":"Exposure of Sensitive Information to an Unauthorized Actor in nanoid","url":"https://github.com/advisories/GHSA-qrpm-p2h7-hrv2","severity":"moderate","versions":[],"vulnerableVersions":[],"range":"<3.1.31","id":"ckPmAkVfCu+NVje92FHtA8UC05jQYoPTA2tcb3aWP57mmwaV9YImqowkliM9VHgzXE+ulzTAOxsQypPIY9aWpw=="}

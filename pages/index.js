@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import {data} from "../data"
 import Testimonials from '../components/Testimonials'
 import Skills from '../components/Skills'
+import Project from '../components/Project'
 
 
 export default function Home({services}) {
@@ -18,7 +19,8 @@ export default function Home({services}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Intro/>
-        <Services services={services}/>
+        {/* <Project/> */}
+         <Services services={services}/> 
         <Skills/>
         <Testimonials/>
         

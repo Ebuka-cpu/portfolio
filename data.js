@@ -2,16 +2,16 @@ export const data = [
     {
       id: 1,
       name: "project",
-      title: "Rect/Redux_UpdatePage",
+      title: "React/Redux_UpdatePage",
       desc: "An update page using React, React-Redux and styled component. Read more...",
       // video: "Avocado.mp4",
-      photo: "react-redux.jpg",
+      photo: "react-redux.JPG",
       longDesc:
         "A simple React-Redux update page, that updates the username on the navbar, the side bar and the right bar upon click of the update button, the state re-renders and update user's information. This project was accomplished using creact-react-app, Redux toolkit, and styled-complonent",
        images: [
         {
           id: 1,
-         url: "/img/react-redux.jpg",
+         url: "/img/react-redux.JPG",
       //   },
         // {
         //   id: 2,
@@ -40,12 +40,12 @@ export const data = [
       name: "project2",
       title: "Responsive React website",
       desc: "A Responsive React frontend website using styled component. Read more...",
-      photo: "reactweb.jpg",
+      photo: "reactweb.JPG",
       longDesc:"This is a simple Responsive react frontend website for an agency. This website was created using creact-react-app and a styled-component and also media queries for it responsive nature..",
       images: [
         {
           id: 1,
-          url: "/img/reactweb.jpg",
+          url: "/img/reactweb.JPG",
         },
         // {
         //   id: 2,
@@ -145,7 +145,7 @@ export const data = [
     {
       id: 1,
       logo: "yahoo.png",
-      avatar: "user1.jpeg",
+      // avatar: "user1.jpeg",
       comment:
         "I have known Felix from our days of primary school, he is someone who is always dedicated and ensures a positive results. I'm glad working with you",
       name: "Chidiebere Emeka",
@@ -154,7 +154,7 @@ export const data = [
     {
       id: 2,
       
-      avatar: "user2.jpeg",
+      // avatar: "user2.jpeg",
       comment:
         "Felix is a good collaborator when it comes to product design and has a good team spirit. it's great working with Felix",
       name: "Uju Okeke",
@@ -163,7 +163,7 @@ export const data = [
     {
       id: 3,
       logo: "facebook.png",
-      avatar: "user3.jpeg",
+      // avatar: "user3.jpeg",
       comment:
         "I will always call on Felix when i need a site frontend to be done. i have worked with him, he is efficient and delivers the job.",
       name: "Cyril",

@@ -1,0 +1,24 @@
+.container{
+    padding: 0 100px;
+}
+
+.title{
+    border-bottom: 1px solid crimson;
+    width: max-content;  
+}
+.subTitle{
+
+}
+.imgContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.img:hover{
+    background-color: crimson;
+}
+@media screen and (max-width: 480px) {
+    .container {
+      padding: 50px;
+    }
+}
