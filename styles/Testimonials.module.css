@@ -45,11 +45,10 @@
     border-radius: 50%;
   }
   
-  .info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-  }
+ .info{
+   display: flex;
+   flex-direction: column;
+ }
   
   .username {
     font-weight: bold;
@@ -62,11 +61,13 @@
   
   @media screen and (max-width: 480px) {
     .container {
-      padding-bottom: 20px;
+      height: auto;
+      padding: 20px;
     }
     .wrapper {
       align-items: center;
       justify-content: center;
+      margin-top: 20px;
     }
     .card {
       width: 100%;
@@ -76,25 +77,13 @@
       text-align: center;
       margin-bottom: 50px;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .container{
-      height: auto;
-      padding: 20px;
-    }
-  
-    .title{
-      margin-bottom: 40px;
-      font-size: 50px;
-    }
-  }
-
-  @media screen and (max-width:480px) {
-    .container{
-      
-    }
     .title{
       font-size: 30px;
+      border-bottom: 2px solid crimson;
+      width: max-content;
     }
+    
   }
+  
+
+  

@@ -12,7 +12,7 @@ const Footer = () => {
           <Link passHref href="/contact">
           <a>
             <span className={styles.linkText}>Lets Work Together</span>
-            <Image src="/img/link.png" alt="" width="40" height="40" />
+            <Image src="/img/link.png" alt="" width="30" height="30" />
           </a>
           </Link>
         </h1>
@@ -29,10 +29,10 @@ const Footer = () => {
         <div className={styles.cardItem}>
           SOCIAL MEDIA:
           <br /> 
-           <a href="https://www.facebook.com/feverest"><Facebook/></a>
-           <a href="https://twitter.com/anyaegbu_ebuka"><Twitter/></a> 
-           <a href="https://www.linkedin.com/in/ebuka-anyaegbu"><LinkedIn/></a> 
-           <a href="https://github.com/Ebuka-cpu"><GitHub/></a>
+           <a href="https://www.facebook.com/feverest" className={styles.social}><Facebook/></a>
+           <a href="https://twitter.com/anyaegbu_ebuka" className={styles.social}><Twitter/></a> 
+           <a href="https://www.linkedin.com/in/ebuka-anyaegbu" className={styles.social}><LinkedIn/></a> 
+           <a href="https://github.com/Ebuka-cpu" className={styles.social}><GitHub/></a>
         </div>
         <div className={styles.cardItem}>
           © {(new Date(). getFullYear())} EBUE-DEV CREATIVE,

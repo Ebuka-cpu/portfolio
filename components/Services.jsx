@@ -5,7 +5,7 @@ import styles from '../styles/Services.module.css'
 const Services = ({services}) => {
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Some Projects</h1>
+            <h1 className={styles.title}>PPROJECTS</h1>
             <div className={styles.services}>
             {services.map(service=>(
                 <Link passHref key={service.id} href={`/product/${service.name}`}>

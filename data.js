@@ -2,16 +2,17 @@ export const data = [
     {
       id: 1,
       name: "project",
-      title: "React/Redux_UpdatePage",
-      desc: "An update page using React, React-Redux and styled component. Read more...",
+      title: "News app",
+      desc: "A news app displaying all the most recent news of the day. Read more...",
       // video: "Avocado.mp4",
-      photo: "react-redux.JPG",
+      photo: "news.JPG",
+      site: "https://news-app-ebuka-cpu.vercel.app",
       longDesc:
-        "A simple React-Redux update page, that updates the username on the navbar, the side bar and the right bar upon click of the update button, the state re-renders and update user's information. This project was accomplished using creact-react-app, Redux toolkit, and styled-complonent",
+        "This is a simple but yet unique news app. it highlights the most recent news of the day. this app was achieved with nextjs react framework, and the news were fetched by hitting the news.org api endpoint",
        images: [
         {
           id: 1,
-         url: "/img/react-redux.JPG",
+         url: "/img/news.JPG",
       //   },
         // {
         //   id: 2,
@@ -38,14 +39,15 @@ export const data = [
     {
       id: 2,
       name: "project2",
-      title: "Responsive React website",
-      desc: "A Responsive React frontend website using styled component. Read more...",
-      photo: "reactweb.JPG",
-      longDesc:"This is a simple Responsive react frontend website for an agency. This website was created using creact-react-app and a styled-component and also media queries for it responsive nature..",
+      title: "Church website",
+      desc: "A church website that displays its mission and vision and other activities. Read more...",
+      photo: "church.JPG",
+      site: "https://winnerscelebrationchapel.com.ng",
+      longDesc:"This is a church website that displays its activities, mission and vission. It also has a sermon page, where all sermons are kept and its downloadable..",
       images: [
         {
           id: 1,
-          url: "/img/reactweb.JPG",
+          url: "/img/church.JPG",
         },
         // {
         //   id: 2,

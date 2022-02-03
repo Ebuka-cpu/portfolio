@@ -6,17 +6,17 @@
     font-size: 30px;
     border-bottom: 2px solid crimson;
     width: max-content;
+    text-align: center;
 }
-.subtitle{
-    font-size: 40px;
-    color: rgb(145, 7, 35);
-}
+
 .services{
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .service{
+    width: auto;
     width: 500px;
     height: 500px;
     display: flex;
@@ -35,6 +35,7 @@
     letter-spacing: 5px;
     font-weight: 300;
     text-transform: uppercase;
+    
 }
 .media{
     width: 85%;
@@ -74,22 +75,25 @@
 @media screen and (max-width:480px) {
     .container{
         padding: 20px;
+        
     }
     .services{
         justify-content: center;
+        
     }
     .service{
         width: 300px;
         height: 300px;
-        
+        margin: 20px;
     }
     .title{
         font-size: 30px;
         border-bottom: 2px solid crimson;
         margin-left: 30px;
     }
-    .subtitle{
-        font-size: 30px;
+    .cat{
+        font-size: 14px;
+        
     }
     
 }

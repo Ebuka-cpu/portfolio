@@ -11,18 +11,10 @@ const Navbar = () => {
       <li className={styles.listItem}>
           <Link href="/">HOME</Link>
         </li>
-        {/* <li className={styles.listItem}>
-          <Link href="/product/design">DESIGN</Link>
+        <li className={styles.listItem}>
+          <Link href="/about">ABOUT</Link>
         </li>
-         <li className={styles.listItem}>
-          <Link href="/product/development">DEVELOPMENT</Link>
-        </li> */}
-        {/* <li className={styles.listItem}>
-          <Link href="/product/production">PRODUCTION</Link>
-        </li> */}
-        {/* <li className={styles.listItem}>
-          <Link href="/product/photography">PHOTOGRAPHY</Link>
-        </li>  */}
+        
         <li className={styles.listItem}>
           <Link href="/contact">CONTACT</Link>
         </li>
@@ -36,24 +28,18 @@ const Navbar = () => {
       <li className={styles.menuItem}>
           <Link href="/">HOME</Link>
         </li>
-      {/* <li className={styles.menuItem}>
-          <Link href="/product/design">DESIGN</Link>
-        </li> */}
+        <li className={styles.menuItem}>
+          <Link href="/about">ABOUT</Link>
+        </li>
+      
         <li className={styles.menuItem}>
           <Link href="/contact">CONTACT</Link>
         </li>
-         {/* <li className={styles.menuItem}>
-          <Link href="/product/development">DEVELOPMENT</Link>
-        </li> */}
+         
         <button className={styles.button}>
           <a href="/img/EbukaDevcv.docx" download>Download Cv</a>
         </button>
-        {/* <li className={styles.menuItem}>
-          <Link href="/product/production">PRODUCTION</Link>
-        </li> */}
-        {/* <li className={styles.menuItem}>
-          <Link href="/product/photography">PHOTOGRAPHY</Link>
-        </li>  */}
+
         
       </ul>
     </div>

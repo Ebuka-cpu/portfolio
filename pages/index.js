@@ -12,11 +12,14 @@ import Project from '../components/Project'
 export default function Home({services}) {
   console.log(services)
   return (
-    <div className={styles.container}>
+    <>
+      <div className={styles.container}>
       <Head>
-        <title>EBUE DEV</title>
-        <meta name="description" content="next beginner" />
-        <link rel="icon" href="/favicon.ico" />
+      <title>EBUE DEV</title>
+        <meta name="description" content="Anyaegbu Ebuka Felix hails from Imo state.
+         He is a graduate of computer science from Michael Okpara Uni. of Agriculture Umudike, Abia, Nigeria.
+         Ebuka as he is often called is a frontend web developer." />
+        <link rel="icon" href="/img/ebuka.png" />
       </Head>
         <Intro/>
         {/* <Project/> */}
@@ -25,7 +28,9 @@ export default function Home({services}) {
         <Testimonials/>
         
     </div>
+    </>
   )
+    
 }
 
 export const getStaticProps = async () =>{
