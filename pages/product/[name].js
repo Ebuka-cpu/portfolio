@@ -9,7 +9,6 @@ const Product = ({ product }) => {
   console.log(product);
   return (
     <div className={styles.container}>
-      
       <div className={styles.cardL}>
         {product.images.map((img) => (
           <div key={img.id} className={styles.imgContainer}>
@@ -28,7 +27,7 @@ const Product = ({ product }) => {
       <div className={styles.cardS}>
         <h1 className={styles.title}>{product.title}</h1>
         <p className={styles.desc}>{product.longDesc}</p>
-        <a href={product.site}>click to visit site</a><br/>
+        <a href={product.site} className={styles.links}>click to visit site</a><br/>
         <button className={styles.button}>
           <Link href="/contact" pasHref>Contact</Link>
         </button>

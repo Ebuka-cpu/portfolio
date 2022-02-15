@@ -35,7 +35,9 @@
     margin-top: 40px;
     cursor: pointer;
 }
-
+.links{
+    color: crimson;
+}
 @media screen and (max-width:480px) {
     .container{
       flex-direction: column-reverse;

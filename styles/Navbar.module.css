@@ -11,9 +11,6 @@
     top: 0;
     z-index: 999;
 }
-.fullStop{
-    color: red;
-}
 .listItem{
     display: inline;
     margin-right: 30px;

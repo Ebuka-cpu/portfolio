@@ -13,26 +13,7 @@ export const data = [
         {
           id: 1,
          url: "/img/news.JPG",
-      //   },
-        // {
-        //   id: 2,
-        //   url: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 3,
-        //   url: "https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 4,
-        //   url: "https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 5,
-        //   url: "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 6,
-        //   url: "https://images.pexels.com/photos/4197693/pexels-photo-4197693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      
        },
       ],
     },
@@ -69,6 +50,24 @@ export const data = [
         //   id: 6,
         //   url: "https://images.pexels.com/photos/9796405/pexels-photo-9796405.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
         // },
+      ],
+    },
+    {
+      id: 2,
+      name: "single_page_application",
+      title: "Single Page Application",
+      desc: "This is a single page application...",
+      // video: "Avocado.mp4",
+      photo: "spa.JPG",
+      site: "https://single-page-application-gray.vercel.app/",
+      longDesc:
+        "This is a responsive single page application frontEnd development, built using React/Nextjs framework. this website can easily be converted to a personal portfolio or a companies website.",
+       images: [
+        {
+          id: 1,
+         url: "/img/spa.JPG",
+      
+       },
       ],
     },
     // {
