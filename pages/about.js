@@ -1,10 +1,37 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/About.module.css";
 
+
+const easing = [0.6, -0.05, 0.01, 0.99];
+
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: easing,
+    },
+  },
+};
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.05,
+    },
+  },
+};
+
 const about = () => {
   return (
+    <motion.div exit={{opacity: 0}} initial="initial" animate="animate">
     <>
       <Head>
         <title>EBUE DEV</title>
@@ -16,9 +43,10 @@ const about = () => {
         />
         <link rel="icon" href="/img/ebuka.png" />
       </Head>
-      <div className={styles.container}>
+      
+      <motion.div variants={fadeInUp} className={styles.container}>
         <div className={styles.left}>
-          <div className={styles.img}>
+          <motion.div initial={{x: 200, opacity: 0}} animate={{x: 0, opacity:1}} transition={{delay: 0.2}} className={styles.img}>
             <Image
               src="/img/ebuka.png"
               alt=""
@@ -27,7 +55,7 @@ const about = () => {
               height={400}
               className="image"
             />
-          </div>
+          </motion.div>
         </div>
         <style jsx global>{`
           .image {
@@ -36,7 +64,7 @@ const about = () => {
           }
         `}</style>
         <div className={styles.right}>
-          <div className={styles.desc}>
+          <motion.div variants={fadeInUp} className={styles.desc}>
             <h1 className={styles.title}>ABOUT ME</h1>
             <p className={styles.text}>
               My name is <b>Anyaegbu Ebuka felix</b>. graduate of computer
@@ -61,10 +89,12 @@ const about = () => {
                 Contact
               </Link>
             </button>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
+      
     </>
+    </motion.div>
   );
 };
 
