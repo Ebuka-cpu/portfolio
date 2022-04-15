@@ -2,7 +2,6 @@ import Circle from "../components/Circle";
 import style from "../styles/Contact.module.css";
 import emailjs from "@emailjs/browser";
 import { useRef, useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
