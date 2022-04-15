@@ -1,58 +1,45 @@
 import Head from "next/head";
-import Image from "next/image";
-import Intro from "../components/Intro";
 import Services from "../components/Services";
 import styles from "../styles/Home.module.css";
 import { data } from "../data";
 import Testimonials from "../components/Testimonials";
 import Skills from "../components/Skills";
-import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 
-
-
 export default function Home({ services }) {
   console.log(services);
 
-    useEffect(() => {
-      AOS.init({
-        duration: 2500,
-        once: false,
-        disable: false,
-      });
-      // eslint-disable-next-line
-    }, []);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 2500,
+      once: false,
+      disable: false,
+    });
+    // eslint-disable-next-line
+  }, []);
 
   return (
-    
-
-      
-        <div className={styles.container}>
-          <Head>
-            <title>EBUE DEV</title>
-            <meta
-              name="description"
-              content="Anyaegbu Ebuka Felix hails from Imo state.
+    <div className={styles.container}>
+      <Head>
+        <title>EBUE DEV</title>
+        <meta
+          name="description"
+          content="Anyaegbu Ebuka Felix hails from Imo state.
          He is a graduate of computer science from Michael Okpara Uni. of Agriculture Umudike, Abia, Nigeria.
          Ebuka as he is often called is a frontend web developer."
-            />
-            <link rel="icon" href="/img/ebuka.png" />
-          </Head>
-          <Header/>
-          <AboutMe/>
-          {/* <Intro /> */}
-          {/* <Project/> */}
-          <Services services={services} />
-          <Skills />
-          <Testimonials />
-        </div>
-     
-    
+        />
+        <link rel="icon" href="/img/ebuka.png" />
+      </Head>
+      <Header />
+      <AboutMe />
+      <Services services={services} />
+      <Skills />
+      <Testimonials />
+    </div>
   );
 }
 
