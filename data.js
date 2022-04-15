@@ -30,30 +30,10 @@ export const data = [
           id: 1,
           url: "/img/church.JPG",
         },
-        // {
-        //   id: 2,
-        //   url: "https://images.pexels.com/photos/9716799/pexels-photo-9716799.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 3,
-        //   url: "https://images.pexels.com/photos/9395308/pexels-photo-9395308.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 4,
-        //   url: "https://images.pexels.com/photos/10067102/pexels-photo-10067102.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 5,
-        //   url: "https://images.pexels.com/photos/5262378/pexels-photo-5262378.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
-        // {
-        //   id: 6,
-        //   url: "https://images.pexels.com/photos/9796405/pexels-photo-9796405.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        // },
       ],
     },
     {
-      id: 2,
+      id: 3,
       name: "single_page_application",
       title: "Single Page Application",
       desc: "This is a single page application...",
@@ -70,76 +50,25 @@ export const data = [
        },
       ],
     },
-    // {
-    //   id: 3,
-    //   name: "production",
-    //   title: "Production",
-    //   desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    //   photo: "production.jpeg",
-    //   longDesc:
-    //     "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    //   images: [
-    //     {
-    //       id: 1,
-    //       url: "https://images.pexels.com/photos/9299384/pexels-photo-9299384.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 2,
-    //       url: "https://images.pexels.com/photos/9100089/pexels-photo-9100089.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 3,
-    //       url: "https://images.pexels.com/photos/9714732/pexels-photo-9714732.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 4,
-    //       url: "https://images.pexels.com/photos/9651391/pexels-photo-9651391.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 5,
-    //       url: "https://images.pexels.com/photos/10008935/pexels-photo-10008935.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 6,
-    //       url: "https://images.pexels.com/photos/7459072/pexels-photo-7459072.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: 4,
-    //   name: "photography",
-    //   title: "Photography",
-    //   desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    //   photo: "photography.jpeg",
-    //   longDesc:
-    //     "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    //   images: [
-    //     {
-    //       id: 1,
-    //       url: "https://images.pexels.com/photos/962000/pexels-photo-962000.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 2,
-    //       url: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 3,
-    //       url: "https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 4,
-    //       url: "https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 5,
-    //       url: "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //     {
-    //       id: 6,
-    //       url: "https://images.pexels.com/photos/4197693/pexels-photo-4197693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    //     },
-    //   ],
-    // },
+    {
+      id: 4,
+      name: "A Movie App",
+      title: "A Movie Application",
+      desc: "A movie app Displaying the latest movies.",
+      // video: "Avocado.mp4",
+      photo: "movie.JPG",
+      site: "https://movie-app-ebuka-cpu.vercel.app",
+      longDesc:
+        "This is a movie website or application, displaying the most recent movies. this website is using the (TMDB) API to fetch the recent movies",
+       images: [
+        {
+          id: 1,
+         url: "/img/movie.JPG",
+      
+       },
+      ],
+    },
+    
   ];
   
   export const users = [
@@ -171,4 +100,8 @@ export const data = [
       title: "Backend Enginner",
     },
   ];
+
+  export const bio = {
+    aboutMe: " My name is Anyaegbu Ebuka felix. graduate of computer science Michael Okpara University Umudike, Abia, Nigeria. I am a frontEnd web developer, who is passionate about users experience and interaction with the web. I am enthusiatic about learning new technogies."
+  }
   

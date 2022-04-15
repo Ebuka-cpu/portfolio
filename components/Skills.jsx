@@ -1,6 +1,10 @@
 import { KeyboardArrowDown, KeyboardArrowUp } from "@material-ui/icons";
 import { useState } from "react";
 import styles from "../styles/Skills.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const Skills = () => {
   const [showSkill1, setShowSkill1] = useState(false);
@@ -8,7 +12,7 @@ const Skills = () => {
   const [showSkill3, setShowSkill3] = useState(false);
 
   return (
-    <div className={styles.container}>
+    <div data-aos="zoom-in-up" className={styles.container}>
       <h1 className={styles.title}>MY TECHNICAL SKILL SET</h1>
       <div className={styles.wrapper}>
         <ul className={styles.skill}>
@@ -24,7 +28,7 @@ const Skills = () => {
             )}
             {showSkill2 && (
               <div className={styles.dev}>
-                html, css, Javascript, React/Nextjs, React-Redux
+                Html5, Css3, Javascript, Tailwindcss, React/Nextjs, React-Redux, 
               </div>
             )}
           </li>
@@ -32,7 +36,7 @@ const Skills = () => {
             className={styles.tools}
             onClick={() => setShowSkill3(!showSkill3)}
           >
-            Content Management System{" "}
+            CMS{" "}
             {showSkill3 ? (
               <KeyboardArrowUp className={styles.arrow} />
             ) : (

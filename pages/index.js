@@ -7,38 +7,32 @@ import { data } from "../data";
 import Testimonials from "../components/Testimonials";
 import Skills from "../components/Skills";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Header from "../components/Header";
+import AboutMe from "../components/AboutMe";
 
-const easing = [0.6, -0.05, 0.01, 0.99];
 
-const fadeInUp = {
-  initial: {
-    y: 60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: easing,
-    },
-  },
-};
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export default function Home({ services }) {
   console.log(services);
-  return (
-    <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
 
-      <motion.div variants={stagger}>
-        <motion.div variants={fadeInUp} className={styles.container}>
+    useEffect(() => {
+      AOS.init({
+        duration: 2500,
+        once: false,
+        disable: false,
+      });
+      // eslint-disable-next-line
+    }, []);
+
+
+  return (
+    
+
+      
+        <div className={styles.container}>
           <Head>
             <title>EBUE DEV</title>
             <meta
@@ -49,14 +43,16 @@ export default function Home({ services }) {
             />
             <link rel="icon" href="/img/ebuka.png" />
           </Head>
-          <Intro />
+          <Header/>
+          <AboutMe/>
+          {/* <Intro /> */}
           {/* <Project/> */}
           <Services services={services} />
           <Skills />
           <Testimonials />
-        </motion.div>
-      </motion.div>
-    </motion.div>
+        </div>
+     
+    
   );
 }
 

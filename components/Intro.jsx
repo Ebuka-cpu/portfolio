@@ -4,7 +4,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import styles from "../styles/Intro.module.css";
 import Circle from "./Circle";
-import { motion } from "framer-motion";
+import { aboutMe, bio} from "../data"
 
 const Intro = () => {
   const textRef = useRef();
@@ -18,42 +18,20 @@ const Intro = () => {
     });
   }, []);
 
-  const easing = [0.6, -0.05, 0.01, 0.99];
 
-const fadeInUp = {
-  initial: {
-    y: 60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: easing,
-    },
-  },
-};
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
   return (
-    <motion.id exit={{opacity: 0}} initial="initial" animate="animate"  className={styles.container}>
+    <div data-aos="zoom-in-up" data-aos-delay="50">
+
+    
+    <div className={styles.container}>
       <Circle backgroundColor="teal" top="-50vh" left="-50vh" />
-      <motion.div variants={fadeInUp} className={styles.card}>
+      <div className={styles.card}>
         <h1 className={styles.title}>
           <span className={styles.brand}>EBUE-DEV</span> WEB
           <br /> DEVELOPMENT AGENCY
         </h1>
         <p className={styles.desc}>
-          My name is <b>Anyaegbu Ebuka felix</b>. graduate of computer science Michael Okpara 
-          University Umudike, Abia, Nigeria. I am a frontEnd web developer, who is 
-          passionate about users experience and interaction with the web. I am enthusiatic
-          about learning new technogies.
+         {bio.aboutMe}
         </p>
         <div className={styles.wrapper}>
           <h3>
@@ -68,9 +46,9 @@ const stagger = {
           <Link passHref href="/contact">Say Hello!</Link>
         </button>
         </div>
-      </motion.div>
+      </div>
       <div className={styles.card}>
-        <motion.div initial={{x: 200, opacity: 0}} animate={{x: 0, opacity:1}} transition={{delay: 0.2}} className={styles.img}>
+        <div className={styles.img}>
           <Image
             src="/img/ebuka.png"
             alt=""
@@ -79,7 +57,7 @@ const stagger = {
             height={400}
             className="image"
           />
-        </motion.div>
+        </div>
         <style jsx global>{`
           .image {
             border-radius: 50%;
@@ -87,7 +65,8 @@ const stagger = {
           }
         `}</style>
       </div>
-    </motion.id>
+    </div>
+    </div>
   );
 };
 

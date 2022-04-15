@@ -2,35 +2,15 @@ import { motion } from 'framer-motion';
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Services.module.css'
-const easing = [0.6, -0.05, 0.01, 0.99];
+import "aos/dist/aos.css";
 
-const fadeInUp = {
-  initial: {
-    y: 60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: easing,
-    },
-  },
-};
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
+
 
 const Services = ({services}) => {
     return (
-        <motion.div exit={{opacity: 0}} initial="initial" animate="animate" className={styles.container}>
-            <h1 className={styles.title}>PPROJECTS</h1>
-            <div className={styles.services}>
+        <div data-aos="zoom-in-up" className={styles.container}>
+            <h1 data-aos="zoom-in-up" className={styles.title}>PPROJECTS</h1>
+            <div data-aos="zoom-in-up" className={styles.services}>
             {services.map(service=>(
                 <Link passHref key={service.id} href={`/product/${service.name}`}>
                     <div className={styles.service}>
@@ -47,7 +27,7 @@ const Services = ({services}) => {
                 </Link>
             ))}
             </div>
-        </motion.div>
+        </div>
     )
 }
 

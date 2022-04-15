@@ -3,32 +3,9 @@ import style from "../styles/Contact.module.css";
 import emailjs from "@emailjs/browser";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import axios from "axios";
-// import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const easing = [0.6, -0.05, 0.01, 0.99];
-
-const fadeInUp = {
-  initial: {
-    y: 60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: easing,
-    },
-  },
-};
-const stagger = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 //FIRST THING IS DESTRUCTURING THE INITIAL VALUES
 // SECOND IS DEFINING OUR USESTATE
@@ -37,11 +14,21 @@ const stagger = {
 //SUBMITTING THE FORM WHEN SUBMIT BUTTON IS CLICKED
 
 const Contact = () => {
+
   const form = useRef();
   const initialValues = { name: "", email: "", message: "" };     
   const [formValues, setFormValues] = useState(initialValues);    
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2500,
+      once: false,
+      disable: false,
+    });
+    // eslint-disable-next-line
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -85,14 +72,8 @@ const Contact = () => {
     return errors;
   };
   return (
-    <motion.div variants={stagger}>
-    <motion.div variants={fadeInUp} exit={{opacity: 0}} initial="initial" animate="animate" transition={{delay: 0.2}}  className={style.container}>
-      {/* <Circle
-        backgroundColor="yellow"
-        right="-30vh"
-        bottom="-60vh"
-        className={style.circle}
-      /> */}
+    
+    <div data-aos="zoom-in-up"  className={style.container}>
       <div className={style.left}>
         <div className={style.card}>
           <h1 className={style.title}>Contact Info</h1>
@@ -168,8 +149,8 @@ const Contact = () => {
           <button className={style.button}>SUBMIT</button>
         </form>
       </div>
-    </motion.div>
-    </motion.div>
+    </div>
+    
   );
 };
 
